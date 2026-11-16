@@ -35,4 +35,4 @@ Planejar o que comer durante a semana e lembrar de todos os ingredientes no supe
 
 1. **Clone o repositório:**
    ```bash
-   git clone [https://github.com/seu-usuario/meal_prep_app.git](https://github.com/seu-usuario/meal_prep_app.git)
+   git clone [https://github.com/seu-usuario/meal_prep_app.git](https://github.com/kamillyvm/meal_prep_app.git)
