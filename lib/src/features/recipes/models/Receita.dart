@@ -1,4 +1,4 @@
-import 'package:untitled1/src/features/recipes/models/Ingrediente.dart';
+import 'package:meal_prep_app/src/features/recipes/models/Ingrediente.dart';
 
 class Recipe {
   final String id;
