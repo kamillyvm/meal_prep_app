@@ -225,8 +225,15 @@ class _HomeViewState extends State<HomeView> {
       automaticallyImplyLeading: false,
       titleSpacing: 20,
       title: Row(
+        mainAxisSize: MainAxisSize.min,
         children: [
-          const SizedBox(width: 8),
+          Image.asset(
+            'assets/images/logo.png',
+            width: 42,
+            height: 42,
+            fit: BoxFit.contain,
+          ),
+          const SizedBox(width: 10),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.center,
@@ -238,27 +245,6 @@ class _HomeViewState extends State<HomeView> {
           ),
         ],
       ),
-      actions: [
-        IconButton(
-          onPressed: () {},
-          icon: const Icon(Icons.notifications_outlined,
-              size: 22, color: corTextoSuave),
-        ),
-        Padding(
-          padding: const EdgeInsets.only(left: 4, right: 20),
-          child: Container(
-            width: 36,
-            height: 36,
-            decoration: BoxDecoration(
-              color: corVerdeChip60,
-              shape: BoxShape.circle,
-              border: Border.all(color: corBrilho, width: 2),
-            ),
-            child: const Icon(Icons.person_outline,
-                size: 20, color: corVerdeIcone),
-          ),
-        ),
-      ],
     );
   }
 

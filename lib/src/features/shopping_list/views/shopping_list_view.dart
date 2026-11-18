@@ -236,36 +236,30 @@ class _ShoppingListViewState extends State<ShoppingListView> {
       surfaceTintColor: Colors.transparent,
       automaticallyImplyLeading: false,
       titleSpacing: 20,
-      title: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.center,
+      title: Row(
+        mainAxisSize: MainAxisSize.min,
         children: [
-          Text('MEAL PREP',
-              style: _estilo(11, FontWeight.w700, _corVerde, espaco: 0.44)),
-          Text('Compras', style: _estilo(18, FontWeight.w600, _corTexto)),
+          Image.asset(
+            'assets/images/logo.png',
+            height: 42,
+          ),
+          const SizedBox(width: 10),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                'MEAL PREP',
+                style: _estilo(11, FontWeight.w700, _corVerde, espaco: 0.44),
+              ),
+              Text(
+                'Compras',
+                style: _estilo(18, FontWeight.w600, _corTexto),
+              ),
+            ],
+          ),
         ],
       ),
-      actions: [
-        IconButton(
-          onPressed: () {},
-          icon: const Icon(Icons.notifications_outlined,
-              size: 22, color: _corTextoSuave),
-        ),
-        Padding(
-          padding: const EdgeInsets.only(left: 4, right: 20),
-          child: Container(
-            width: 36,
-            height: 36,
-            decoration: BoxDecoration(
-              color: _corVerdeChip60,
-              shape: BoxShape.circle,
-              border: Border.all(color: _corBrilho, width: 2),
-            ),
-            child: const Icon(Icons.person_outline,
-                size: 20, color: _corVerdeIcone),
-          ),
-        ),
-      ],
     );
   }
 

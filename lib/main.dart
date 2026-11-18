@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:meal_prep_app/src/features/home/views/home_view.dart';
 import 'package:meal_prep_app/src/features/shopping_list/viewmodels/listas_compras.dart';
 import 'package:meal_prep_app/src/features/shopping_list/views/shopping_list_view.dart';
 
@@ -20,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange),
         useMaterial3: true,
       ),
-      home: const HomeView(),
+      home: const ShoppingListView(),
       debugShowCheckedModeBanner: false,
     );
   }
